@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>日常里的那片绿茵 | 足球竞彩</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            background-color: #f0f2f5;
+            color: #2c3e50;
+            line-height: 1.7;
+            padding: 2rem 1rem;
+        }
+
+        .page {
+            max-width: 960px;
+            margin: 0 auto;
+        }
+
+        /* hero / 开场短句 */
+        .hero {
+            background: linear-gradient(145deg, #eef1f5, #f8fafc);
+            border: 1px solid #dce1e8;
+            border-radius: 28px;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.04);
+            padding: 3.2rem 2.5rem;
+            margin-bottom: 2.8rem;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.2rem;
+            font-weight: 400;
+            letter-spacing: 1px;
+            color: #1e2a3a;
+            margin-bottom: 0.75rem;
+        }
+
+        .hero .tagline {
+            font-size: 1.1rem;
+            color: #607080;
+            font-weight: 300;
+            border-top: 1px solid #cbd5e1;
+            padding-top: 1rem;
+            display: inline-block;
+        }
+
+        /* 承接段落 */
+        .section-card {
+            background: #ffffff;
+            border: 1px solid #e2e7ee;
+            border-radius: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.02);
+            padding: 2rem 2.2rem;
+            margin-bottom: 2rem;
+            transition: box-shadow 0.2s ease;
+        }
+
+        .section-card:hover {
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.05);
+        }
+
+        .section-card h2 {
+            font-size: 1.5rem;
+            font-weight: 450;
+            color: #1f2a3f;
+            margin-bottom: 1.2rem;
+            letter-spacing: 0.3px;
+            border-left: 4px solid #aab9d0;
+            padding-left: 1rem;
+        }
+
+        .section-card p {
+            margin-bottom: 1rem;
+            font-size: 1rem;
+            color: #2f3a4b;
+        }
+
+        .section-card p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* 特点列表 – 温和卡片网格 */
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+            gap: 1.4rem;
+            margin-top: 0.5rem;
+        }
+
+        .feature-item {
+            background: #f6f9fd;
+            border: 1px solid #dce3ed;
+            border-radius: 18px;
+            padding: 1.2rem 1.3rem;
+            box-shadow: 0 1px 6px rgba(0,0,0,0.02);
+        }
+
+        .feature-item h3 {
+            font-size: 1.1rem;
+            font-weight: 500;
+            color: #1f2e42;
+            margin-bottom: 0.5rem;
+        }
+
+        .feature-item p {
+            font-size: 0.95rem;
+            color: #43505f;
+            line-height: 1.6;
+            margin-bottom: 0;
+        }
+
+        /* 温和结尾 */
+        .closing-note {
+            background: #ffffff;
+            border: 1px solid #e2e7ee;
+            border-radius: 20px;
+            padding: 2rem 2.2rem;
+            margin-top: 0.8rem;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.02);
+            text-align: center;
+        }
+
+        .closing-note p {
+            font-size: 1rem;
+            max-width: 580px;
+            margin: 0 auto 0.3rem;
+        }
+
+        .closing-note .muted {
+            color: #7388a0;
+            font-size: 0.9rem;
+            margin-top: 0.8rem;
+        }
+
+        /* 链接嵌入样式 */
+        .inline-link {
+            color: #2a4b7a;
+            text-decoration: none;
+            border-bottom: 1px solid #b7c8dd;
+            transition: border-color 0.2s, color 0.2s;
+            font-weight: 450;
+        }
+
+        .inline-link:hover {
+            color: #0f2b4a;
+            border-bottom-color: #2a4b7a;
+        }
+
+        /* 响应式 */
+        @media (max-width: 650px) {
+            body {
+                padding: 1.2rem 0.8rem;
+            }
+            .hero {
+                padding: 2rem 1.2rem;
+            }
+            .hero h1 {
+                font-size: 1.7rem;
+            }
+            .section-card {
+                padding: 1.5rem 1.2rem;
+            }
+            .feature-grid {
+                grid-template-columns: 1fr;
+            }
+            .closing-note {
+                padding: 1.5rem 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <!-- 开场短句 hero -->
+        <div class="hero">
+            <h1>周末午后，一场不赶时间的球赛</h1>
+            <div class="tagline">从看台到屏幕，那份牵挂始终没变</div>
+        </div>
+
+        <!-- 承接段落：主题展开 生活化 但正式 -->
+        <div class="section-card">
+            <h2>为什么总有一场比赛让你放不下</h2>
+            <p>
+                有些日子，生活像被切成定格画面——通勤、会议、清单。但每当熟悉的队歌响起，或者手机弹出那个比分推送，心里某个角落就被轻轻点亮。足球从来不只是一项运动，它更像一种陪伴：九十分钟里，悲喜都那么真实。很多人已经习惯了在周末的缝隙里，为自己留出一段独属于绿茵的时间。
+            </p>
+            <p>
+                而关于这场比赛的选择，有时也包含一点小小的期待。有人喜欢研究阵型，有人偏爱临场气氛，也有人只是想找个安静的方式，为自己看好的球队默默加个油。这种微妙的参与感，或许就是 <a href="https://web-ssl-footballbet.com" class="inline-link">足球竞彩</a> 融入日常的原因——它让观赛多了一层属于自己的叙事。
+            </p>
+        </div>
+
+        <!-- 特点列表 柔和卡片 -->
+        <div class="section-card">
+            <h2>那些让人留意的细节</h2>
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <h3>⚽ 赛前功课</h3>
+                    <p>看看近期状态、伤病名单，甚至天气预报。这些零碎的信息，本身就是一种看球的乐趣。</p>
+                </div>
+                <div class="feature-item">
+                    <h3>📋 多种玩法</h3>
+                    <p>从胜平负到比分差，从半全场到进球数，每一种选择都像在描述你预见的比赛走向。</p>
+                </div>
+                <div class="feature-item">
+                    <h3>⏱️ 即时变化</h3>
+                    <p>比赛里的红牌、点球、换人，都可能改变局势。这种流动感，让九十分钟永远充满未知。</p>
+                </div>
+                <div class="feature-item">
+                    <h3>🧩 小注怡情</h3>
+                    <p>不需要惊天动地的投入，几块钱的参与也能让一场平淡的0-0平局变得津津有味。</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 场景段落 温和承接 -->
+        <div class="section-card">
+            <h2>一些自然发生的场景</h2>
+            <p>
+                打开赛程表，挑一场时间刚好的对决。泡杯茶，把手机放在一旁，一边看着直播一边偶尔瞄一眼数据变动。如果是深夜的欧冠，周围安静下来，屏幕的光映在脸上，那种专注反而让日常的疲惫慢慢散去。很多时候，人们并不是真的执着于输赢，而是享受那种和全世界一起等待结果的感觉。
+            </p>
+            <p>
+                还有那些和朋友的闲聊——“今晚利物浦客场，我觉得能赢”“但门将刚复出啊”——这些对话围绕着一场场真实的比赛展开，没有剧本，却比任何剧情都生动。
+            </p>
+        </div>
+
+        <!-- FAQ 摘要 温和结尾 -->
+        <div class="closing-note">
+            <p><strong>偶尔会有这样的疑问</strong><br>
+            是不是需要很懂球才能参与？其实不必。很多时候，凭感觉或者单纯支持自己喜欢的球队，也是一种方式。重要的是享受比赛的过程，以及那份小小的期待。</p>
+            <p class="muted">
+                —— 把足球当作日常里的一抹色彩，而不是全部。这样刚刚好。
+            </p>
+            <p style="margin-top: 1.2rem; font-size: 0.9rem; color: #8899b0;">
+                <span style="opacity: 0.7;">⚡ 从一场比赛开始，找到属于自己的节奏。</span>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
